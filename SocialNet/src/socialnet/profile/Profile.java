@@ -16,10 +16,10 @@ package socialnet.profile;
  */
 public class Profile {
     
-    private String firstName;
-    private String lastName;
-    private int age;
-    private String location;
+    private final String firstName;
+    private final String lastName;
+    private final int age;
+    private final String location;
            
     //constructor
     Profile (String firstName,String lastName, int age, String location)

@@ -10,7 +10,7 @@ package socialnet.profile;
  * @author jackpincombe
  */
 public class profileCoord {
-    private Profile profile;
+    private members members;
     
     public profileCoord()
     {
@@ -27,7 +27,8 @@ public class profileCoord {
             System.out.println("You must be over the age of 12 to become a member");
         }
         else{
-            Profile profile = new Profile(firstName, lastName, age, location);
+            Profile member = new Profile(firstName, lastName, age, location);
+            members = new members(member);
             
         }
     }
