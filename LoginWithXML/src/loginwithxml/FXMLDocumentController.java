@@ -12,9 +12,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.text.Text;
+import java.util.Random;
 
 
-/**
+/**str
  *
  * @author jackpincombe
  */
@@ -28,7 +29,14 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void handleSubmitButtonAction(ActionEvent event) {
-        actiontarget.setText("Sign in button was pressed");
+        
+        Random rand = new Random();
+        
+        String answers[] = {"Apple","Pear","Orange","Toaster"};
+        
+        String answer = answers[rand.nextInt(4) + 0];
+        
+        actiontarget.setText(answer);
     }
     
     @Override

@@ -20,8 +20,7 @@ public class LoginWithXML extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
-        Scene scene = new Scene(root,300,275);
+        Scene scene = new Scene(root,500,300);
         stage.setTitle("FXML login");
         stage.setScene(scene);
         stage.show();
