@@ -41,6 +41,8 @@ public class FXMLDocumentController  {
     @FXML
     private int total;
     
+    public TextField arr[] = {Income, Rent,Util,Groceries,Travel,Debts};
+    
     private boolean empty = true; 
     
     @FXML
@@ -55,9 +57,17 @@ public class FXMLDocumentController  {
     
     //func to calculate the total
     public void calculate(){
-        System.out.println("Calculate func called");
+        System.out.println(arr.length);
+        for (int i = 0; i < arr.length; i++) {
+            String outp = arr[i].getText();
+            System.out.println(outp);
+        }
     }
-    
+    private void total(){
+        for (int i = 0; i < 10; i++) {
+            
+        }
+    }
     //Func to validate all fields are given
     public void validate(){
         
@@ -65,27 +75,33 @@ public class FXMLDocumentController  {
              if (Income.getText().isEmpty()) {
             actiontarget.setText("Please enter your income");
             empty = true;
+            validate();
             }
             else if (Rent.getText().isEmpty()) {
             actiontarget.setText("Please enter your Rent");
             empty = true;
+            validate();
             
         }
             else if (Util.getText().isEmpty()) {
             actiontarget.setText("Please enter your Utilities");
             empty = true;
+            validate();
     }
             else if (Groceries.getText().isEmpty()) {
             actiontarget.setText("Please enter your Groceries");
             empty = true;
+            validate();
     }
             else if (Travel.getText().isEmpty()) {
             actiontarget.setText("Please enter your Travel costs");
             empty = true;
+            validate();
         }
             else if (Debts.getText().isEmpty()) {
             actiontarget.setText("Please enter your Debts");
             empty = true;
+            validate();
         }
             else{
                 empty = false;
