@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29-Dec-2017, 16:48:04
+    Author     : jackpincombe
+*/
+.root {-fx-background-image: url("123.jpg");}
+
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-font-color: white;
+}
+
+#login-text{
+    -fx-font-size:32px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #115E7F;
+}
+
+#actiontarget{
+    -fx-fill: white;
+    -fx-font-weight: bold;
+    
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-background-color: linear-gradient(#61a2b1,#2A5058);
+}
