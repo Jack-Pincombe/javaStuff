@@ -11,6 +11,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+
 /**
  *
  * @author jackpincombe
@@ -21,8 +22,8 @@ public class BudgetCalculator extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
-        Scene scene = new Scene(root,400,300);
-        
+        Scene scene = new Scene(root,400,400);
+        scene.getStylesheets().add(BudgetCalculator.class.getResource("newCascadeStyleSheet.css").toExternalForm()) ; 
         stage.setScene(scene);
         stage.show();
     }
