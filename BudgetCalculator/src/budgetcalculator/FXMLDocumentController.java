@@ -73,6 +73,7 @@ public class FXMLDocumentController  {
     public void validate(){
         
         while(empty == true){
+            
              if (Income.getText().isEmpty()) {
             actiontarget.setText("Please enter your income");
             empty = true;
