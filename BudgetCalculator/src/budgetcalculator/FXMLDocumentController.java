@@ -41,33 +41,34 @@ public class FXMLDocumentController  {
     @FXML
     private int total;
     
-    public TextField arr[] = {Income, Rent,Util,Groceries,Travel,Debts};
+    public TextField outgoings[] = { Rent,Util,Groceries,Travel,Debts};
     
     private boolean empty = true; 
     
     @FXML
     private void handlecalculationButtonAction(ActionEvent event) {
         System.out.println("Calculation Button has been pressed");
-        System.out.println(Income.getText());
+        
         validate();
         calculate();
-        System.out.println(total);
-        //actiontarget.setText(Income);
+        System.out.println("Your weekly balance after bills is: " + total);
+        actiontarget.setText("Your weekly balance after bills is: " + total);
     }
     
     //func to calculate the total
     public void calculate(){
-        System.out.println(arr.length);
-        for (int i = 0; i < arr.length; i++) {
-            String outp = arr[i].getText();
-            System.out.println(outp);
-        }
+        int salary = Integer.parseInt(Income.getText());
+        int ut = Integer.parseInt(Util.getText());
+        int rent = Integer.parseInt(Rent.getText());
+        int Groc = Integer.parseInt(Groceries.getText());
+        int trav = Integer.parseInt(Travel.getText());
+        int debt = Integer.parseInt(Debts.getText());    
+    
+        int outG = ut + rent + Groc + trav + debt;
+        
+        total = (salary - outG)/4;
     }
-    private void total(){
-        for (int i = 0; i < 10; i++) {
-            
-        }
-    }
+    
     //Func to validate all fields are given
     public void validate(){
         
