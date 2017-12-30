@@ -16,24 +16,23 @@
     </padding>
     
         <Label text="Budget Calculator" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>  
-       
         <Label text="Monthly Income: " GridPane.columnIndex="0" GridPane.rowIndex="2"/>
-        <TextField GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <TextField fx:id="Income" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
     
         <Label text="Monthly Rent: " GridPane.columnIndex="0" GridPane.rowIndex="3"/>
-        <TextField GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <TextField fx:id="Rent" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
         
         <Label text="Utillities: " GridPane.columnIndex="0" GridPane.rowIndex="5"/>
-        <TextField GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+        <TextField fx:id="Util" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
         
         <Label text="Groceries: " GridPane.columnIndex="0" GridPane.rowIndex="7"/>
-        <TextField GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+        <TextField fx:id="Groceries" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
        
         <Label text="Travel: " GridPane.columnIndex="0" GridPane.rowIndex="9"/>
-        <TextField GridPane.columnIndex="1" GridPane.rowIndex="9"/>
+        <TextField fx:id="Travel" GridPane.columnIndex="1" GridPane.rowIndex="9"/>
 
         <Label text="Debts" GridPane.columnIndex="0" GridPane.rowIndex="11"/>  
-        <TextField GridPane.columnIndex="1" GridPane.rowIndex="11"/>
+        <TextField fx:id="Debts" GridPane.columnIndex="1" GridPane.rowIndex="11"/>
         
         <HBox spacing="10" alignment="bottom_right"
             GridPane.columnIndex="1" GridPane.rowIndex="12">
